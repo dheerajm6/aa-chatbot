@@ -1,0 +1,295 @@
+/* American Airlines Accurate Styles */
+
+/* Font Faces */
+@font-face {
+    font-family: 'American Sans';
+    src: url('https://em-fonts-prod.airtrfx.com/fonts/american-sans/resources/AmericanSans.woff2') format('woff2'),
+         url('https://em-fonts-prod.airtrfx.com/fonts/american-sans/resources/AmericanSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'American Sans Light';
+    src: url('https://em-fonts-prod.airtrfx.com/fonts/american-sans-light/resources/AmericanSansLight.woff2') format('woff2'),
+         url('https://em-fonts-prod.airtrfx.com/fonts/american-sans-light/resources/AmericanSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Root Variables - AA Brand Colors */
+:root {
+    --aa-blue: #0078d2;
+    --aa-dark-blue: #00467F;
+    --aa-hover-blue: #0061ab;
+    --aa-light-blue: #E8F4F8;
+    --aa-red: #D50032;
+    --aa-gray-dark: #36495a;
+    --aa-gray-light: #f9f9f9;
+    --aa-gray-border: #e0e0e0;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --white: #ffffff;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--white);
+}
+
+/* Typography */
+.american-sans-light {
+    font-family: 'American Sans Light', AmericanSansLight, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    color: var(--aa-dark-blue);
+}
+
+/* Utility Classes */
+.text-aa-blue { color: var(--aa-blue); }
+.text-aa-dark-blue { color: var(--aa-dark-blue); }
+.text-aa-red { color: var(--aa-red); }
+.bg-aa-blue { background-color: var(--aa-blue); }
+.bg-aa-dark-blue { background-color: var(--aa-dark-blue); }
+.bg-aa-light-blue { background-color: var(--aa-light-blue); }
+.bg-aa-hover-blue { background-color: var(--aa-hover-blue); }
+
+/* Header Styles */
+.header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__main-section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-primary-navigation a {
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.22px;
+    text-transform: none;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-primary-navigation a:hover {
+    color: var(--aa-blue) !important;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.bg-hero-gradient {
+    background: linear-gradient(135deg, var(--aa-dark-blue) 0%, var(--aa-blue) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIG9wYWNpdHk9IjAuMDMiIGQ9Ik0wIDUwTDUwIDBMMTAwIDUwTDUwIDEwMEwwIDUwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+');
+    background-size: 100px 100px;
+    opacity: 0.3;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="date"],
+select {
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: var(--aa-blue);
+    box-shadow: 0 0 0 3px rgba(0, 120, 210, 0.1);
+}
+
+/* Button Styles */
+button[type="submit"] {
+    background-color: var(--aa-blue);
+    color: var(--white);
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--aa-hover-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 120, 210, 0.3);
+}
+
+/* Tab Styles */
+.border-aa-blue {
+    border-color: var(--aa-blue);
+}
+
+/* Card Styles */
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Custom Focus States */
+*:focus {
+    outline: 2px solid var(--aa-blue);
+    outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+/* Flag Icons */
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flag-icon-us {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjQjIyMjM0Ii8+CjxwYXRoIGQ9Ik0wIDJIMjBNMCA0SDIwTTAgNkgyME0wIDhIMjBNMCAxMEgyME0wIDEySDIwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEiLz4KPHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iNyIgZmlsbD0iIzNDM0I2RSIvPgo8L3N2Zz4=');
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-logos img {
+        height: 32px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Override Tailwind defaults for AA brand */
+.focus\:ring-aa-blue:focus {
+    --tw-ring-color: var(--aa-blue);
+}
+
+.focus\:ring-aa-light-blue:focus {
+    --tw-ring-color: var(--aa-light-blue);
+}
+
+.hover\:bg-aa-hover-blue:hover {
+    background-color: var(--aa-hover-blue);
+}
+
+.hover\:text-aa-blue:hover {
+    color: var(--aa-blue);
+}
+
+/* Additional AA-specific styles */
+.BookingMask {
+    position: relative;
+    z-index: 10;
+}
+
+.FareTitleHeader h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Destination card hover effects */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+/* Footer link styles */
+footer a {
+    font-family: 'American Sans', AmericanSans, Helvetica, Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--aa-blue);
+}
+
+/* Loading states */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Print styles */
+@media print {
+    .header,
+    footer {
+        display: none;
+    }
+    
+    .bg-hero-gradient {
+        background: none;
+        color: black;
+    }
+}

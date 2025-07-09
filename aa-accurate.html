@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book & Compare Cheap American Airlines Flights | American Airlines</title>
+    <link rel="stylesheet" href="aa-accurate.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Header -->
+    <header class="header flex justify-center flex-col">
+        <div class="flex flex-wrap header__main-section justify-center h-20 px-3 bg-white shadow-md">
+            <div class="flex flex-wrap header__main-section-body justify-start w-full flex-no-wrap max-h-full max-w-6xl">
+                <!-- Logo -->
+                <div class="flex flex-wrap header-logos items-center flex-row mr-4">
+                    <a href="/" class="flex items-center">
+                        <img src="aa-large-default.webp" alt="American Airlines" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="flex flex-wrap flex-grow pl-6 justify-end">
+                    <div class="flex flex-wrap items-stretch flex-no-wrap p-1 header-primary-navigation flex-row items-center">
+                        <a href="#book" class="flex items-center flex-grow justify-center px-4 py-2 text-aa-dark-blue hover:text-aa-blue transition-colors">Book</a>
+                        <a href="#check-in" class="flex items-center flex-grow justify-center px-4 py-2 text-aa-dark-blue hover:text-aa-blue transition-colors">Check in</a>
+                        <a href="#status" class="flex items-center flex-grow justify-center px-4 py-2 text-aa-dark-blue hover:text-aa-blue transition-colors">Flight status</a>
+                        <a href="#aadvantage" class="flex items-center flex-grow justify-center px-4 py-2 text-aa-dark-blue hover:text-aa-blue transition-colors">AAdvantage</a>
+                    </div>
+                    
+                    <!-- Language Toggle -->
+                    <div class="flex flex-wrap header-language-toggle h-full p-1">
+                        <button class="relative p-1 block flex flex-no-wrap items-center pr-8 pl-2 text-aa-dark-blue">
+                            <span class="flag-icon flag-icon-us mr-2"></span>
+                            <span>EN</span>
+                            <svg class="absolute h-full right-0 top-0 pointer-events-none flex items-center justify-center w-8" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="FlightsBooking w-full max-w-full">
+        <!-- Hero Section with Booking Form -->
+        <section class="flex flex-wrap flex-col max-w-full relative justify-start bg-hero-gradient">
+            <div class="flex flex-wrap flex justify-center max-w-full FareTitleHeader z-10 overflow-hidden px-3 py-12">
+                <div class="w-full max-w-full lg:max-w-6xl flex-grow">
+                    <h1 class="text-4xl md:text-5xl font-light text-white mb-4 american-sans-light">Where can we take you?</h1>
+                    <p class="text-xl text-white opacity-90">Book your next adventure with American Airlines</p>
+                </div>
+            </div>
+            
+            <!-- Booking Form -->
+            <div class="flex flex-wrap flex justify-center max-w-full BookingMask px-3 -mt-8 pb-16">
+                <div class="w-full max-w-full lg:max-w-6xl flex-grow">
+                    <div class="bg-white rounded-lg shadow-2xl p-6">
+                        <!-- Trip Type Tabs -->
+                        <div class="flex flex-wrap pb-1 -mx-1 -my-1 w-full border-b border-gray-200 mb-6">
+                            <div class="flex flex-wrap mx-1 my-1 w-full max-w-fit">
+                                <button class="px-4 py-2 text-aa-blue border-b-2 border-aa-blue font-medium">Round trip</button>
+                                <button class="px-4 py-2 text-gray-600 hover:text-aa-blue transition-colors">One way</button>
+                                <button class="px-4 py-2 text-gray-600 hover:text-aa-blue transition-colors">Multi city</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Search Form -->
+                        <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div class="relative">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">From</label>
+                                <input type="text" 
+                                       placeholder="City or airport" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-aa-blue focus:ring-2 focus:ring-aa-light-blue focus:outline-none">
+                                <svg class="absolute right-3 top-10 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="relative">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">To</label>
+                                <input type="text" 
+                                       placeholder="City or airport" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-aa-blue focus:ring-2 focus:ring-aa-light-blue focus:outline-none">
+                                <svg class="absolute right-3 top-10 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="relative">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Depart</label>
+                                <input type="date" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-aa-blue focus:ring-2 focus:ring-aa-light-blue focus:outline-none">
+                            </div>
+                            
+                            <div class="relative">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Return</label>
+                                <input type="date" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-aa-blue focus:ring-2 focus:ring-aa-light-blue focus:outline-none">
+                            </div>
+                            
+                            <div class="relative md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Passengers</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-aa-blue focus:ring-2 focus:ring-aa-light-blue focus:outline-none appearance-none">
+                                    <option>1 passenger, Economy</option>
+                                    <option>2 passengers, Economy</option>
+                                    <option>3 passengers, Economy</option>
+                                    <option>4+ passengers, Economy</option>
+                                </select>
+                                <svg class="absolute right-3 top-10 w-5 h-5 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="md:col-span-2 flex items-end">
+                                <button type="submit" class="w-full bg-aa-blue text-white py-3 px-6 rounded-md font-medium hover:bg-aa-hover-blue transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aa-blue">
+                                    Search flights
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Additional Options -->
+                        <div class="flex flex-wrap gap-4 mt-4">
+                            <label class="flex items-center text-sm text-gray-600">
+                                <input type="checkbox" class="mr-2 rounded border-gray-300 text-aa-blue focus:ring-aa-blue">
+                                Add hotel
+                            </label>
+                            <label class="flex items-center text-sm text-gray-600">
+                                <input type="checkbox" class="mr-2 rounded border-gray-300 text-aa-blue focus:ring-aa-blue">
+                                Add car
+                            </label>
+                            <a href="#" class="text-sm text-aa-blue hover:underline">Advanced search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Information Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-3">
+                <h2 class="text-3xl font-light text-aa-dark-blue mb-8 american-sans-light">Travel with confidence</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-aa-light-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-aa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium text-aa-dark-blue mb-2">Clean commitment</h3>
+                        <p class="text-gray-600">Enhanced cleaning and safety measures for your peace of mind</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-aa-light-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-aa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium text-aa-dark-blue mb-2">Flexible booking</h3>
+                        <p class="text-gray-600">Change or cancel your trip with no change fees on most fares</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-aa-light-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-aa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium text-aa-dark-blue mb-2">Global network</h3>
+                        <p class="text-gray-600">Fly to 350+ destinations across 50+ countries worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-3">
+                <h2 class="text-3xl font-light text-aa-dark-blue mb-8 american-sans-light">Popular destinations from your area</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="#" class="group">
+                        <div class="relative overflow-hidden rounded-lg aspect-[4/3]">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTNGMkZEIi8+CjxyZWN0IHk9IjIwMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiM1QzZCQzAiLz4KPHBhdGggZD0iTTEwMCAyMDBMMTUwIDEwMEwyMDAgMjAwTDI1MCAxNTBMMzAwIDIwMCIgc3Ryb2tlPSIjM0Y1MUI1IiBzdHJva2Utd2lkdGg9IjQiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iODAiIHI9IjMwIiBmaWxsPSIjRkZDMTA3Ii8+Cjwvc3ZnPg==" alt="New York" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <h3 class="text-lg font-medium">New York</h3>
+                                <p class="text-sm opacity-90">From $199</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="group">
+                        <div class="relative overflow-hidden rounded-lg aspect-[4/3]">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRkZFMEIyIi8+CjxyZWN0IHk9IjIwMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNGRkI3NEQiLz4KPHBhdGggZD0iTTUwIDI1MEwxMDAgMjAwTDE1MCAyNTBMMjAwIDIwMEwyNTAgMjUwTDMwMCAyMDBMMzUwIDI1MCIgc3Ryb2tlPSIjRkY5ODAwIiBzdHJva2Utd2lkdGg9IjQiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiNGRkVCM0IiLz4KPC9zdmc+" alt="Miami" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <h3 class="text-lg font-medium">Miami</h3>
+                                <p class="text-sm opacity-90">From $149</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="group">
+                        <div class="relative overflow-hidden rounded-lg aspect-[4/3]">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRkZDREQ0Ii8+CjxwYXRoIGQ9Ik0wIDIwMEMwIDIwMCA1MCAyMDAgMTAwIDE1MEMxNTAgMTAwIDIwMCAxNTAgMjUwIDEwMEMzMDAgNTAgMzUwIDEwMCA0MDAgMTAwVjMwMEgwVjIwMFoiIGZpbGw9IiNGNDhGQjEiLz4KPGNpcmNsZSBjeD0iMzIwIiBjeT0iNjAiIHI9IjI1IiBmaWxsPSIjRkZBNzI2Ii8+Cjwvc3ZnPg==" alt="Los Angeles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <h3 class="text-lg font-medium">Los Angeles</h3>
+                                <p class="text-sm opacity-90">From $179</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="group">
+                        <div class="relative overflow-hidden rounded-lg aspect-[4/3]">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjQzdFOUQ4Ii8+CjxyZWN0IHk9IjI1MCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzRDQUY1MCIvPgo8cmVjdCB4PSI1MCIgeT0iMjAwIiB3aWR0aD0iMzAiIGhlaWdodD0iNTAiIGZpbGw9IiM3OTU1NDgiLz4KPHJlY3QgeD0iMTUwIiB5PSIxODAiIHdpZHRoPSIzMCIgaGVpZ2h0PSI3MCIgZmlsbD0iIzc5NTU0OCIvPgo8cmVjdCB4PSIyNTAiIHk9IjE2MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjkwIiBmaWxsPSIjNzk1NTQ4Ii8+CjxyZWN0IHg9IjM1MCIgeT0iMjEwIiB3aWR0aD0iMzAiIGhlaWdodD0iNDAiIGZpbGw9IiM3OTU1NDgiLz4KPGNpcmNsZSBjeD0iMjAwIiBjeT0iNjAiIHI9IjM1IiBmaWxsPSIjRkZFQjNCIi8+Cjwvc3ZnPg==" alt="Chicago" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <h3 class="text-lg font-medium">Chicago</h3>
+                                <p class="text-sm opacity-90">From $129</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AAdvantage CTA -->
+        <section class="py-16 bg-aa-dark-blue">
+            <div class="max-w-6xl mx-auto px-3 text-center">
+                <h2 class="text-3xl font-light text-white mb-4 american-sans-light">Join AAdvantage® today</h2>
+                <p class="text-xl text-white opacity-90 mb-8">Earn miles on every trip and enjoy exclusive member benefits</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#" class="bg-white text-aa-blue px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
+                        Join now
+                    </a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white hover:text-aa-blue transition-all">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-3">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-medium text-aa-dark-blue mb-4">Help</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Contact American</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Receipts & refunds</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">FAQs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Agency reference</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-aa-dark-blue mb-4">About American</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">About us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Investor relations</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-aa-dark-blue mb-4">Extras</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Bag & optional fees</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">AAdvantage program</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Business programs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">Gift cards</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-aa-dark-blue mb-4">Follow us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-aa-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-300 pt-8 text-center text-sm text-gray-600">
+                <p>&copy; 2024 American Airlines Inc. All rights reserved.</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-4">
+                    <a href="#" class="hover:text-aa-blue transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-aa-blue transition-colors">Terms of use</a>
+                    <a href="#" class="hover:text-aa-blue transition-colors">Cookies</a>
+                    <a href="#" class="hover:text-aa-blue transition-colors">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="aa-accurate.js"></script>
+</body>
+</html>
