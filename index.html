@@ -313,5 +313,21 @@
     </footer>
 
     <script src="aa-accurate.js"></script>
+    
+    <!-- Chatbot Integration -->
+    <script>
+        (function () {
+            // Define chatbot configuration
+            window.userChatbotConfig = {
+                chatbotId: "df42629c-4bed-4a9d-b7d0-ae1947a67bbc",
+                privateKey: "ZGY0MjYyOWM0YmVkNGE5ZGI3ZDBhZTE5NDdhNjdiYmNfNTU0MjI=",
+            };
+            // Dynamically load chatbot plugin
+            const chatbotScript = document.createElement("script");
+            chatbotScript.src = "https://chatjs.hyperleap.ai/chatbot.min.js";
+            chatbotScript.async = true; // Load asynchronously for better performance
+            document.head.appendChild(chatbotScript);
+        })();
+    </script>
 </body>
 </html>
